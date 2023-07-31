@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #E3DFFD;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  min-height: 97vh;
+  margin: 0;
+
+}
+
+.container {
+  background-color: #FFF4D2;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+.form button {
+  cursor: pointer;
+  /* background-color: #19A7CE; */
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #002B5B;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 90px;
+
+
+}
+
+  .buttons {
+    width: 200px;
+    margin: 0px auto;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .clear{
+    margin-left: 10px;
+    color: #fff;
+
+  }
+  .login{
+    text-decoration: none;
+    list-style: none;
+    background-color: #E9EDC9;
+    border-radius: 4px;
+    color: #fff;
+
+    width: 90px;
+    text-align: center;
+    padding: 5px auto;
+    margin-left: 10px;
+
+  }
+

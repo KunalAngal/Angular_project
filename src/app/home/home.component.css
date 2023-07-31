@@ -1,0 +1,12 @@
+.text{
+  border: 2px solid black;
+  width: 300px;
+  margin-left: 10rem;
+  padding: 25px;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}

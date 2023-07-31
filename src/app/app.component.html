@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="app.component.css">
+  <title>Login form </title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="form" class="form" [formGroup]="login">
+
+      <div class="form-control">
+        <label for="username">Enter Username</label>
+        <input type="text" id="username" placeholder="Enter username" formControlName="Username">
+        <span *ngIf="login.get('Username').invalid && login.get('Username').dirty">Minimum 3 characters are
+          required</span>
+      </div>
+
+
+
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" formControlName="Password">
+        <span
+          *ngIf="login.get('Password').invalid && login.get('Password').touched && login.get('Password').dirty">Minimum
+          5 character password required</span>
+      </div>
+
+
+      <div class="buttons">
+        <a routerLink="../home" class="login"><button (click)="onSubmitClick()" [disabled]="!login.valid"
+            routerLink="home.component.html">Login</button></a>
+        <button class="clear" (click)="onClearClick()">Clear</button>
+      </div>
+
+
+    </form>
+  </div>
+
+  <router-outlet></router-outlet>
+</body>
+
+</html>
